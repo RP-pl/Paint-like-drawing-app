@@ -1,0 +1,20 @@
+﻿<Window x:Name ="Win" x:Class="WPFAppTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAppTest"
+        mc:Ignorable="d"
+        Title="Writing Board" Height="700" Width="800">
+    <Grid>
+  
+        <StackPanel HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Margin="0,0,-0.4,0" Width="794" >
+            <StackPanel.Orientation>Horizontal</StackPanel.Orientation>
+            <Button Content="Clear" Click="Button_Click" Width="60" Height="30"/>
+            <Button Content="Save" Click="Button_Click_1" Width="60"  Height="30" VerticalAlignment="Top" ></Button>
+            <Button Content="Change Color" Click="Button_Click_2" Width="80" Height="30"></Button>
+            <Button Content="Change Stroke" Height="30" FontSize="12" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click_3"></Button>
+        </StackPanel>
+        <InkCanvas x:Name="canvas" Width="800" Height="640" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
